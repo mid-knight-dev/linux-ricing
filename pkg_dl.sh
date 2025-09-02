@@ -30,7 +30,11 @@ declare -A openssh=(
 	[name]="openssh"
 	[bin]=0
 )
-packages=("neovim" "obsidian" "spotify" "waybar" "hyprpaper" "git" "openssh")
+declare -A brightness=(
+	[name]="brightnessctl"
+	[bin]=0
+) 
+packages=("neovim" "obsidian" "spotify" "waybar" "hyprpaper" "git" "openssha" "brightness")
 
 for package in "${packages[@]}"; do
 	declare -n current="${package}"
