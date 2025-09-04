@@ -4,7 +4,7 @@
     font-size: 15px;
 }
 
-@define-color primary #f433ff;
+@define-color primary #FF6FFF;
 @define-color secondary #00f2de;
 @define-color accent #B026FF;
 
@@ -60,7 +60,7 @@ button:hover {
 #workspaces button {
     margin: 5px 5px 5px 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: @secondary;
 }
 
 #workspaces button:hover {
@@ -73,6 +73,7 @@ button:hover {
 
 #workspaces button.active {
 	background-color: @primary;
+	color: #000991;
 }
 
 #workspaces button.urgent {
@@ -183,35 +184,35 @@ label:focus {
 
 #cpu {
     background-color: @primary;
-    color: #000000;
+    color: #12086F;
     border-radius: 30px;
     margin-bottom: 3.5px;
 }
 
 #memory {
     background-color: @primary;
-    color: #000000;
+    color: #12086F;
     border-radius: 30px;
     margin-bottom: 3.5px;
 }
 
 #disk {
     background-color: @primary;
-    color: #000000;
+    color: #12086F;
     border-radius: 30px;
     margin-bottom: 3.5px;
 }
 
 #backlight {
     background-color: @primary;
-    color: #000000;
+    color: #12086F;
     border-radius: 30px;
     margin-bottom: 3.5px;
 }
 
 #network {
     background-color: @primary;
-    color: #000000;
+    color: #12086F;
     border-radius: 30px;
     margin-bottom: 3.5px;
 }
@@ -222,7 +223,7 @@ label:focus {
 
 #pulseaudio {
     background-color: @primary;
-    color: #000000;
+    color: #12086F;
     border-radius: 30px;
     margin-bottom: 3.5px;
 }
@@ -250,7 +251,7 @@ label:focus {
 
 #temperature {
     background-color: @primary;
-    color: #000000;
+    color: #12086F;
     border-radius: 30px;
     margin-bottom: 3.5px;
 }

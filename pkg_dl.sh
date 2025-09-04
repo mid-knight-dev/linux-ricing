@@ -6,35 +6,48 @@ declare -A neovim=(
 	[name]="neovim"
 	[bin]=0
 )
+
 declare -A obsidian=(
 	[name]="obsidian"
 	[bin]=0
 )
+
 declare -A spotify=(
 	[name]="spotify-launcher"
 	[bin]=0
 )
+
 declare -A waybar=(
 	[name]="waybar"
 	[bin]=0
 )
+
 declare -A hyprpaper=(
 	[name]="hyprpaper"
 	[bin]=0
 )
+
 declare -A git=(
 	[name]="git"
 	[bin]=0
 )
+
 declare -A openssh=(
 	[name]="openssh"
 	[bin]=0
 )
+
 declare -A brightness=(
 	[name]="brightnessctl"
 	[bin]=0
-) 
-packages=("neovim" "obsidian" "spotify" "waybar" "hyprpaper" "git" "openssha" "brightness")
+)
+
+declare -A hyprlock=(
+	[name]="hyprlock"
+	[bin]
+)
+
+packages=("neovim" "obsidian" "spotify" "waybar" "hyprpaper" "git" "openssha" "brightness" "hyprlock")
 
 for package in "${packages[@]}"; do
 	declare -n current="${package}"
