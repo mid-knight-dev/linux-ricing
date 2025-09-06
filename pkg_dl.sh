@@ -44,10 +44,15 @@ declare -A brightness=(
 
 declare -A hyprlock=(
 	[name]="hyprlock"
-	[bin]
+	[bin]=0
 )
 
-packages=("neovim" "obsidian" "spotify" "waybar" "hyprpaper" "git" "openssha" "brightness" "hyprlock")
+declare -A mpd=(
+	[name]="mpd"
+	[bin]=0
+)
+
+packages=("neovim" "obsidian" "spotify" "waybar" "hyprpaper" "git" "openssha" "brightness" "hyprlock" "mpd")
 
 for package in "${packages[@]}"; do
 	declare -n current="${package}"
